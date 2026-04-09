@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Image Detector</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: #f4f4f4;
+    }
+
+    img {
+      max-width: 400px;
+      margin-top: 20px;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>🧠 AI Image Object Detection</h2>
+
+<input type="file" id="imageUpload" accept="image/*">
+
+<br>
+
+<img id="image" />
+
+<div id="result">Upload an image</div>
+
+<!-- AI Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
